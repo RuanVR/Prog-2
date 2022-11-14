@@ -1,7 +1,14 @@
 package aula02;
-
-public class main {
+public class Main {
     public static void main(String[] args){
-        System.out.println("Ola, mundo!");
+        Caneta c1 = new Caneta();
+        c1.cor = "Azul";
+        c1.ponta = 0.5f;
+        c1.tampada = false;
+        c1.carga = 5;
+
+        c1.tampar();
+        c1.rabiscar();
+        c1.status();
     }
 }

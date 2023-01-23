@@ -22,7 +22,7 @@ public class TelaJFrame {
         Tela.add(texto2);
         Tela.add(new JLabel());
         Tela.add(button);
-        
+
         Tela.pack();
         Tela.setVisible(true);
     }

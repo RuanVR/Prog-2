@@ -1,4 +1,4 @@
-package execicio03;
+package exercicio03;
 
 public class Login {
     private String usuario;
@@ -10,20 +10,20 @@ public class Login {
 
     public Login(String usuario, String senha) {
         this.usuario = usuario;
-        this.senha = senha;
+        setSenha(senha);
     }
 
     public boolean fazerLogin(String _usuario, String _senha) {
 
         try {
-            if (!this.usuario.equals(_usuario)){
-                throw new Exception("Usuário incorreto");
+            if (!usuario.equals(_usuario)){
+                throw new Exception("Usuario incorreto");
             }
-            if (!this.senha.equals(_senha)){
+            if (!senha.equals(_senha)){
                 throw new Exception("Senha incorreta");
             }
         } catch (Exception e) {
-            System.out.println("Erro");
+            System.out.println(e.getMessage());
             return false;
         }
 

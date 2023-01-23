@@ -5,7 +5,7 @@ import java.util.InputMismatchException;
 public class Calculo {
     private int dividendo;
     private int divisor;
-    private float resultado;
+    private int resultado;
 
     public void Resultado (){
         Scanner leitor = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class Calculo {
         } catch(ArithmeticException e){
             System.out.println("Divisao por zero");
         } catch(InputMismatchException e){
-            System.out.println("Valores nao numericos");
+            System.out.println("Valor nao numerico");
         }
 
     }

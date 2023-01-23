@@ -15,15 +15,14 @@ public class TelaJFrame {
 
         JButton button = new JButton("OK");
 
-        Tela.setLayout(new GridLayout(3, 2));
+        Tela.setLayout(new GridLayout(1, 1));
         Tela.add(label1);
         Tela.add(texto1);
         Tela.add(label2);
         Tela.add(texto2);
         Tela.add(new JLabel());
         Tela.add(button);
-
-        // Exibe o JFrame
+        
         Tela.pack();
         Tela.setVisible(true);
     }

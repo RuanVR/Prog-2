@@ -3,7 +3,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Vetor {
-    private int[] vetor = new int[10];
+    private int vetor[] = new int[10];
     private int valor;
     private int i = 0;
 
@@ -21,14 +21,12 @@ public class Vetor {
                     i++;
                 }
 
-                if (i > 10){
-                    throw new ArrayIndexOutOfBoundsException("Posições indisponiveis");
-                }
             } catch (ArrayIndexOutOfBoundsException e){
-                System.out.println(e.getMessage());
+                System.out.println("Posicoes indisponiveis");
                 break;
             } catch(InputMismatchException e){
                 System.out.println("Valores nao numericos");
+                leitor.nextLine();
             }
         }
 
